@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        #contenedor{
+            width: 400px;
+            height: 200px;
+            border:1px solid black;
+            position: relative;
+            margin:0 auto;
+            margin-top: 100px;
+            overflow: hidden;
+            background-image: url("./img/estrellas_horizontal.gif");
+            background-size: cover;
+        }
+        #COHETE{
+            width: 80px;
+            position: absolute;
+            top: 50%;
+            left: -100px;
+            transform: translateY(-50%) rotate(90deg);
+            animation: volar 8s linear infinite;
+        }
+        @keyframes volar{
+            from{
+                left: -100px;
+            }
+            to{
+                left: 450px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="contenedor">
+        <img id="COHETE" src="./img/COHETE.png">
+    </div>
+
+</body>
+</html>
