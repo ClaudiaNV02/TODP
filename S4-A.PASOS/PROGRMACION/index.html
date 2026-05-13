@@ -1,0 +1,123 @@
+<html>
+<head>
+        <title>PROGRAMACION</title>
+            <style>
+              *{
+                  padding:0px;
+                  margin:0px;
+                  text-align:center;
+
+                }
+            body{
+                background-color: rgb(250, 193, 232);
+            }
+            .contenedor{
+                width: 600px; /*ancho*/
+                height: 300px; /*alto*/
+                background-color: brown;
+                border: 1px solid rgb(132, 121, 205);
+                position: relative;/*provoca el centrado con div*/
+                margin: 0 auto; /*centrado del contenedor*/
+                margin-top: 100;
+                overflow: hidden;
+                background-size: cover;
+            }
+            .tarjeta1,.tarjeta2,.tarjeta3{
+                width: 200px; /*dimension del cuadro*/
+                height: 300px;
+                position: absolute; /*interno*/
+                top: -300px;
+                background-size: cover;
+               
+            }
+            .tarjeta1{
+              background-image: url(img/LqXKK.jpg);
+              left: 0px;
+              animation: tarjeta1 3s 1 forwards ;
+            }  
+            .tarjeta2{
+              background-image: url(img/js.jpg);
+              left: 200px;
+              animation: tarjeta2 3s 1 forwards ;
+            }  
+            .tarjeta3{
+              background-image: url(img/CSS3.jpg);
+              left: 400px;
+              animation: tarjeta3 3s 1 forwards ;
+            }  
+           @keyframes tarjeta1{
+                0%{
+                   left: 600px;
+                   top:300px; /*arriba*/
+                   transform: rotate(360deg);
+                }
+               
+                
+                100%{
+                    left: 0px;
+                    top:0%
+                }
+            }
+            @keyframes tarjeta2{
+                0%{
+                   
+                   top:300px; /*arriba*/
+                   transform: rotate(360deg);
+                }
+                50%{
+                    top: -300px;
+                }
+                100%{
+                    top:0%
+                }
+            }
+            @keyframes tarjeta3{
+                0%{
+                   left:-600px;
+                   top:300px;
+                   transform: rotate(360deg);
+                }
+                100%{
+                    right:0px;
+                    top:0px;
+                }
+            }
+            /*EVENTOS*/
+           .tarjeta1:hover{
+              transition:  1s;
+              scale:1.2;
+              z-index:1;
+              border-left-color: blueviolet;
+            }
+            .tarjeta2:hover{
+              transition:  1s;
+              scale:1.2;
+              z-index:1;
+            }
+            .tarjeta3:hover{
+              transition:  1s;
+              scale:1.2;
+              z-index:1;
+            }
+            .tarjeta4:hover{
+              transition:  1s;
+              scale:1.2;
+              z-index:1;
+            }
+                
+        </style>
+
+</head>
+<body>
+    <div class="Contenedor">
+        <div class="tarjeta1"></div>
+        <div class="tarjeta2"></div>
+        <div class="tarjeta3"></div>
+        <div class="tarjeta4"></div>
+    </div>
+     
+</body>
+<br>
+<br>
+<a href="../index3.html">VOLVER PAPU</a>
+</html>
