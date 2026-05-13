@@ -1,0 +1,102 @@
+<html>
+<head>
+        <title>ANIMACION CS3</title>
+            <style>
+              *{
+                  margin:0px;
+                  padding:0px;
+                }
+            .contenedor{
+                width: 400px;
+                height: 200px;
+                border: 1px solid black;
+                position: relative;/*provoca el centrado con div*/
+                margin: 0 auto; /*centrado del contenedor*/
+                margin-top: 50;
+                overflow: hidden;
+                background-image: url("./img/campo.jpg");
+                background-size: cover;
+            }
+            .cuadrito{
+                width: 50px; /*dimension del cuadro*/
+                height: 50px;
+                position: absolute; /*interno*/
+                left: -50px;
+                top: 50px;
+                animation: cuadrito 5s infinite;
+
+            }
+            .cuadrito2{
+                width: 50px; /*dimension del cuadro*/
+                height: 50px;
+                position: absolute; /*interno*/
+                left: -50px;
+                top: 100px;
+                animation: cuadrito2 5s infinite;
+
+            }
+            @keyframes cuadrito{
+                0%{
+                   left: -50px;
+                   top: 150px;
+                   rotate:0deg;
+                }
+                50%{
+                    left: 150;
+                    top: 0px;
+                    rotate:60deg;
+
+                }
+                100%{
+                    left: 400;
+                    top: 150px;
+                    rotate:0deg;
+                }
+
+            }
+            @keyframes cuadrito2{
+                0%{
+                    left: -25px;
+                    top: 0px;
+                    rotate:0deg;
+                }
+                50%{
+                    left: 150;
+                    top: 155px;
+                    rotate:60deg;
+
+                }
+                100%{
+                    left: 400;
+                    top: -155px;
+                    rotate:0deg;
+                }
+
+            }
+            .cuadrito img{
+                width: 40px;
+                height: 40px;
+            }
+            .cuadrito2 img{
+                width: 40px;
+                height: 40px;
+            }
+            </style>
+</head>
+<body>
+   <div class="Contenedor">
+      <div class="cuadrito">
+         <img src="./img/abeja.jpeg" alt="">
+      </div>
+      
+      <div class="cuadrito2">
+        <img src="./img/abeja2.jpeg" alt="">
+      </div>
+         
+    </div>
+    
+     
+  
+     
+</body>
+</html>
